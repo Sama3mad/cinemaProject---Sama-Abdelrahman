@@ -16,6 +16,8 @@ private slots: // Make sure to use private slots for Qt signals/slots
     void on_pushButtonlogin_clicked();
     void on_pushButton_2_clicked();
 
+    void on_pushButtonLogin_clicked();
+
 private:
     Ui::Login *ui;
 };

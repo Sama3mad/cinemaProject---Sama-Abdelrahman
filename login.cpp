@@ -16,7 +16,7 @@ login::~login()
     delete ui;
 }
 
-void login::on_pushButtonlogin_clicked()
+void login::on_pushButtonLogin_clicked()
 {
     QString username = ui->lineEditUsername->text();
     QString password = ui->lineEditPassword->text();
@@ -26,11 +26,13 @@ void login::on_pushButtonlogin_clicked()
             Welcome* welcomeWindow = new Welcome(this);
             welcomeWindow->show();
             welcomeWindow->setnameandage(username, ages[i]);
-            return; // Exit the function after successful login
+
         }
     }
-    ui->labelError->setVisible(true); // Show error label if login fails
+    ui->labelError->setVisible(1); // Show error label if login fails
 }
+
+
 
 void login::on_pushButton_2_clicked()
 {
@@ -38,3 +40,4 @@ void login::on_pushButton_2_clicked()
     Register* registerWindow = new Register(this);
     registerWindow->show();
 }
+
