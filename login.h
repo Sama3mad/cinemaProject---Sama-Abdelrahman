@@ -2,12 +2,7 @@
 #define LOGIN_H
 
 #include <QMainWindow>
-
-QT_BEGIN_NAMESPACE
-namespace Ui {
-class login;
-}
-QT_END_NAMESPACE
+#include "ui_login.h" // Include the generated ui_login.h file
 
 class login : public QMainWindow
 {
@@ -17,7 +12,12 @@ public:
     login(QWidget *parent = nullptr);
     ~login();
 
+private slots: // Make sure to use private slots for Qt signals/slots
+    void on_pushButtonlogin_clicked();
+    void on_pushButton_2_clicked();
+
 private:
-    Ui::login *ui;
+    Ui::Login *ui;
 };
+
 #endif // LOGIN_H

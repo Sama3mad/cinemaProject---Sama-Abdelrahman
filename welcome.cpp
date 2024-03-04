@@ -25,7 +25,7 @@ void Welcome::setnameandage(QString username, int age){
 void Welcome::on_pushButton_clicked()
 {
     hide();
-    Login *loginWindow = new Login (this);
+    login *loginWindow = new login (this);
     loginWindow->show();
 }
 
