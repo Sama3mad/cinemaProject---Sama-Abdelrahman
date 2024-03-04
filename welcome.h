@@ -4,19 +4,23 @@
 #include <QDialog>
 
 namespace Ui {
-class welcome;
+class Welcome;
 }
 
-class welcome : public QDialog
+class Welcome : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit welcome(QWidget *parent = nullptr);
-    ~welcome();
+    explicit Welcome(QWidget *parent = nullptr);
+    void setnameandage(QString, int);
+    ~Welcome();
+
+private slots:
+    void on_pushButton_clicked();
 
 private:
-    Ui::welcome *ui;
+    Ui::Welcome *ui;
 };
 
 #endif // WELCOME_H
