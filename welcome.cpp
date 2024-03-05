@@ -7,7 +7,7 @@ Welcome::Welcome(QWidget *parent)
     , ui(new Ui::Welcome)
 {
     ui->setupUi(this);
-    QPixmap pix ("C:\\Users\\Sama\\Downloads\\good morning.jpg");
+QPixmap pix("images/FinalStep.jpg");
     int w = ui->Image->width();
     int h = ui->Image->height();
     ui->Image->setPixmap(pix.scaled (w,h, Qt:: KeepAspectRatio));
