@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/resources">
+        <file>images/FinalStep.jpg</file>
+    </qresource>
+</RCC>
